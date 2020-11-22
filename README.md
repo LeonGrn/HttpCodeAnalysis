@@ -1,14 +1,14 @@
-# HTTP response
+## HTTP response
 **HTTPCodeAnalysis** was created to track http request and save it for future analysis, the user have to choose which stream he want to save it.
 
 [![](https://jitpack.io/v/LeonGrn/HttpCodeAnalysis.svg)](https://jitpack.io/#LeonGrn/HttpCodeAnalysis)
 
-### Download
-### Requirement
+#### Download
+#### Requirement
 ```
 minSdkVersion 23
 ```
-### Repository
+#### Repository
 
 Add this in your root  `build.gradle`  file (**not**  your module  `build.gradle`  file):
 ```
@@ -20,21 +20,21 @@ allprojects {
 }
 
 ```
-### Dependency
+#### Dependency
 Add this to your module's  `build.gradle`  file (Note: version should match the jitpack badge above)
 ```
 dependencies {
  implementation 'com.github.LeonGrn:HttpCodeAnalysis:1.0.0'
 }
 ```
-# Usage (for this example i will choose to save the requests to file)
-## First lets initialize the objects
+## Usage (for this example i will choose to save the requests to file)
+### First lets initialize the objects
 ```
     HttpCode myHttp;
     PrintWriter pw;
     File file;
 ```
-## Now lets create an instance for each one
+### Now lets create an instance for each one
 ```
     String filePath = this.getFilesDir().getPath().toString() + "/HTTPCODE1.txt";
     file = new File(filePath);
@@ -48,7 +48,7 @@ dependencies {
         e.printStackTrace();
     }
 ```
-## In my example to create the HTTP request i use volley SDK(this function was override from volley library)
+### In my example to create the HTTP request i use volley SDK(this function was override from volley library)
 ```
 @Override
      protected Response<String> parseNetworkResponse(NetworkResponse response) {
