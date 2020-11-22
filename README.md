@@ -52,7 +52,6 @@ dependencies {
 #### Now paste it in the function CheckHttpCode
 ```
      myHttp.CheckHttpCode(mStatusCode);
-     
 ```
 #### After it you can read it from the file
 ```
