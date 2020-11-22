@@ -1,5 +1,5 @@
 ## HTTP Analysis
-**HTTPCodeAnalysis** was created to track http request and save it for future analysis, the user have to choose which stream he want to save it.
+**HTTPCodeAnalysis** was created to track http request and save it for future debug, the user have to choose which stream he want to save it.
 
 [![](https://jitpack.io/v/LeonGrn/HttpCodeAnalysis.svg)](https://jitpack.io/#LeonGrn/HttpCodeAnalysis)
 [![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
