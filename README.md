@@ -1,4 +1,4 @@
-## HTTP response
+## HTTP Analysis
 **HTTPCodeAnalysis** was created to track http request and save it for future analysis, the user have to choose which stream he want to save it.
 
 [![](https://jitpack.io/v/LeonGrn/HttpCodeAnalysis.svg)](https://jitpack.io/#LeonGrn/HttpCodeAnalysis)
