@@ -24,7 +24,7 @@ allprojects {
 Add this to your module's  `build.gradle`  file (Note: version should match the jitpack badge above)
 ```
 dependencies {
- implementation 'com.github.LeonGrn:HttpCodeAnalysis:Tag'
+ implementation 'com.github.LeonGrn:HttpCodeAnalysis:1.0.0'
 }
 ```
 # Usage
