@@ -48,7 +48,7 @@ dependencies {
         e.printStackTrace();
     }
 ```
-### In my example to create the HTTP request i use volley SDK(you need to create http request and capture the code)
+### Now you need to create http request and capture the code
 #### Now paste it in the function CheckHttpCode
 ```
      myHttp.CheckHttpCode(mStatusCode);
