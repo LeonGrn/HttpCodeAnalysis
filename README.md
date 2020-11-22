@@ -48,24 +48,25 @@ dependencies {
         e.printStackTrace();
     }
 ```
-### In my example to create the HTTP request i use volley SDK(this function was override from volley library)
+### In my example to create the HTTP request i use volley SDK(you need to create http request and capture the code)
+#### Now paste it in the function CheckHttpCode
 ```
-@Override
-     protected Response<String> parseNetworkResponse(NetworkResponse response) {
-         String mStatusCode = String.valueOf(response.statusCode);
-         myHttp.CheckHttpCode(mStatusCode);
-         try {
-             BufferedReader br = new BufferedReader(new FileReader(file));
-             String st;
-             while ((st = br.readLine()) != null)
-                 System.out.println(st);
-         }
-         catch (FileNotFoundException e) {
-             e.printStackTrace();
-         }
-         catch (IOException e) {
-             e.printStackTrace();
-         }
-         return super.parseNetworkResponse(response);
+     myHttp.CheckHttpCode(mStatusCode);
+     
+```
+#### After it you can read it from the file
+```
+     try {
+         BufferedReader br = new BufferedReader(new FileReader(file));
+         String st;
+         while ((st = br.readLine()) != null)
+             System.out.println(st);
      }
+     catch (FileNotFoundException e) {
+         e.printStackTrace();
+     }
+     catch (IOException e) {
+         e.printStackTrace();
+     }
+     
 ```
