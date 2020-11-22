@@ -28,7 +28,7 @@ dependencies {
  implementation 'com.github.LeonGrn:HttpCodeAnalysis:1.0.0'
 }
 ```
-## Usage (for this example i will choose to save the requests to file)
+## Usage (for this example i will choose to save the results to file)
 ### First lets initialize the objects
 ```
     HttpCode myHttp;
