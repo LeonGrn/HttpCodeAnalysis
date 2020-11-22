@@ -37,14 +37,35 @@ dependencies {
 ## Now lets create an instance for each one
 ```
     String filePath = this.getFilesDir().getPath().toString() + "/HTTPCODE1.txt";
-        file = new File(filePath);
+    file = new File(filePath);
 
-        try {
-            pw = new PrintWriter(new FileOutputStream(
-                    file,
-                    true /* append = true */));
-            myHttp = new HttpCode(pw);
-        } catch (FileNotFoundException e) {
-            e.printStackTrace();
-        }
+    try {
+        pw = new PrintWriter(new FileOutputStream(
+                file,
+                true /* append = true */));
+        myHttp = new HttpCode(pw);
+    } catch (FileNotFoundException e) {
+        e.printStackTrace();
+    }
+```
+## In my example to create the HTTP request i use volley SDK(this function was override from volley library)
+```
+@Override
+     protected Response<String> parseNetworkResponse(NetworkResponse response) {
+         String mStatusCode = String.valueOf(response.statusCode);
+         myHttp.CheckHttpCode(mStatusCode);
+         try {
+             BufferedReader br = new BufferedReader(new FileReader(file));
+             String st;
+             while ((st = br.readLine()) != null)
+                 System.out.println(st);
+         }
+         catch (FileNotFoundException e) {
+             e.printStackTrace();
+         }
+         catch (IOException e) {
+             e.printStackTrace();
+         }
+         return super.parseNetworkResponse(response);
+     }
 ```
