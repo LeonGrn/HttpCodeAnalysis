@@ -1,0 +1,3 @@
+include ':HttpCodeAnalysis'
+include ':app'
+rootProject.name = "HttpTestApp"
