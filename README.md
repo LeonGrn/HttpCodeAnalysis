@@ -1,5 +1,5 @@
-# HTTP response 
-**HTTPCodeAnalysis** was created to follow http request and save it for future analysis.
+# HTTP response
+**HTTPCodeAnalysis** was created to track http request and save it for future analysis, the user have to choose which stream he want to save it.
 
 [![](https://jitpack.io/v/LeonGrn/HttpCodeAnalysis.svg)](https://jitpack.io/#LeonGrn/HttpCodeAnalysis)
 
@@ -27,4 +27,24 @@ dependencies {
  implementation 'com.github.LeonGrn:HttpCodeAnalysis:1.0.0'
 }
 ```
-# Usage
+# Usage (for this example i will choose to save the requests to file)
+## First lets initialize the objects
+```
+    HttpCode myHttp;
+    PrintWriter pw;
+    File file;
+```
+## Now lets create an instance for each one
+```
+    String filePath = this.getFilesDir().getPath().toString() + "/HTTPCODE1.txt";
+        file = new File(filePath);
+
+        try {
+            pw = new PrintWriter(new FileOutputStream(
+                    file,
+                    true /* append = true */));
+            myHttp = new HttpCode(pw);
+        } catch (FileNotFoundException e) {
+            e.printStackTrace();
+        }
+```
