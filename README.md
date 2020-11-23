@@ -61,5 +61,5 @@ First lets initialize the objects
          e.printStackTrace();
      }
      
-#### Example
+#### Example output to file with date & time
 ![](HttpCodeAnalysis/examples/Capture.PNG)
