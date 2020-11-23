@@ -70,3 +70,6 @@ dependencies {
      }
      
 ```
+#### Example
+
+![](examples/CAPTURE.PNG)
