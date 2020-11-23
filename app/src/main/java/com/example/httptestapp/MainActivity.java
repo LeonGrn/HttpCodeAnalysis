@@ -48,7 +48,8 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         btn = findViewById(R.id.btn);
-        OutputStreamWriter os = new OutputStreamWriter(System.err);
+
+        //OutputStreamWriter os = new OutputStreamWriter(System.err);
 
         String filePath = this.getFilesDir().getPath().toString() + "/HTTPCODE1.txt";
         file = new File(filePath);
