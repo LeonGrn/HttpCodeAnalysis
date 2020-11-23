@@ -1,22 +1,20 @@
 ### HTTPCodeAnalysis was created to track http request and save it for future debug, the user have to choose which stream he want to save it.
 
-### License
-
 #### Download
  #### Requirement
- '''
+...
  minSdkVersion 23
-'''
-Repository
+...
+#### Repository
 Add this in your root build.gradle file (not your module build.gradle file):
-
+...
 allprojects {
  repositories {
   ...
   maven { url "https://jitpack.io" }
  }
 }
-
+...
 Dependency
 Add this to your module's build.gradle file (Note: version should match the jitpack badge above)
 
