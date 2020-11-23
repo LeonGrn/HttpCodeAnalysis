@@ -15,18 +15,18 @@ allprojects {
  }
 }
 ,,,
-Dependency
+#### Dependency
 Add this to your module's build.gradle file (Note: version should match the jitpack badge above)
 
 dependencies {
  implementation 'com.github.LeonGrn:HttpCodeAnalysis:1.0.0'
 }
-Usage (for this example i will choose to save the results to file)
+### Usage (for this example i will choose to save the results to file)
 First lets initialize the objects
     HttpCode myHttp;
     PrintWriter pw;
     File file;
-Now lets create an instance for each one
+#### Now lets create an instance for each one
     String filePath = this.getFilesDir().getPath().toString() + "/HTTPCODE1.txt";
     file = new File(filePath);
 
@@ -38,10 +38,10 @@ Now lets create an instance for each one
     } catch (FileNotFoundException e) {
         e.printStackTrace();
     }
-Now you need to create http request and capture the code
-Now paste it in the function CheckHttpCode
+#### Now you need to create http request and capture the code
+#### Now paste it in the function CheckHttpCode
      myHttp.CheckHttpCode(mStatusCode);
-After it you can read it from the file
+#### After it you can read it from the file
      try {
          BufferedReader br = new BufferedReader(new FileReader(file));
          String st;
@@ -55,4 +55,4 @@ After it you can read it from the file
          e.printStackTrace();
      }
      
-Example
+#### Example
