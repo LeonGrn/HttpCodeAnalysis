@@ -1,11 +1,11 @@
 ### HTTPCodeAnalysis was created to track http request and save it for future debug, the user have to choose which stream he want to save it.
 
-#### Download
- #### Requirement
+### Download
+ ### Requirement
 ```
  minSdkVersion 23
 ```
-#### Repository
+### Repository
 Add this in your root build.gradle file (not your module build.gradle file):
 ```
 allprojects {
@@ -15,7 +15,7 @@ allprojects {
  }
 }
 ```
-#### Dependency
+### Dependency
 Add this to your module's build.gradle file (Note: version should match the jitpack badge above)
 ```
 dependencies {
@@ -43,8 +43,8 @@ First lets initialize the objects
         e.printStackTrace();
     }
 ```
-#### Now you need to create http request and capture the code
-#### Now paste it in the function CheckHttpCode
+#### Create http request and capture the code
+#### Paste the code in the function CheckHttpCode
      myHttp.CheckHttpCode(mStatusCode);
 #### After it you can read it from the file
      try {
@@ -61,4 +61,4 @@ First lets initialize the objects
      }
      
 #### Example
-![](examples/CAPTURE.PNG)
+![](examples/Capture.PNG)
